@@ -9,19 +9,21 @@
 /* Begin PBXBuildFile section */
 		0984E9B1216EE81500678E63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984E9B0216EE81500678E63 /* AppDelegate.swift */; };
 		0984E9B3216EE81500678E63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984E9B2216EE81500678E63 /* ViewController.swift */; };
-		0984E9B6216EE81500678E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0984E9B4216EE81500678E63 /* Main.storyboard */; };
 		0984E9B8216EE81600678E63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0984E9B7216EE81600678E63 /* Assets.xcassets */; };
 		0984E9BB216EE81600678E63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0984E9B9216EE81600678E63 /* LaunchScreen.storyboard */; };
+		0984EA04218808F900678E63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0984E9B4216EE81500678E63 /* Main.storyboard */; };
+		099DE83521894DA200A1701F /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099DE83421894DA200A1701F /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0984E9AD216EE81500678E63 /* CameraWithImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraWithImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0984E9B0216EE81500678E63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0984E9B2216EE81500678E63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0984E9B5216EE81500678E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0984E9B5216EE81500678E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		0984E9B7216EE81600678E63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0984E9BA216EE81600678E63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0984E9BC216EE81600678E63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		099DE83421894DA200A1701F /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		0984E9AF216EE81500678E63 /* CameraWithImage */ = {
 			isa = PBXGroup;
 			children = (
+				099DE83321894D6300A1701F /* Utils */,
+				0984E9C22176F24800678E63 /* Storyboards */,
 				0984E9B0216EE81500678E63 /* AppDelegate.swift */,
 				0984E9B2216EE81500678E63 /* ViewController.swift */,
-				0984E9B4216EE81500678E63 /* Main.storyboard */,
 				0984E9B7216EE81600678E63 /* Assets.xcassets */,
 				0984E9B9216EE81600678E63 /* LaunchScreen.storyboard */,
 				0984E9BC216EE81600678E63 /* Info.plist */,
 			);
 			path = CameraWithImage;
+			sourceTree = "<group>";
+		};
+		0984E9C22176F24800678E63 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0984E9B4216EE81500678E63 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		099DE83321894D6300A1701F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				099DE83421894DA200A1701F /* Camera.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +141,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0984EA04218808F900678E63 /* Main.storyboard in Resources */,
 				0984E9BB216EE81600678E63 /* LaunchScreen.storyboard in Resources */,
 				0984E9B8216EE81600678E63 /* Assets.xcassets in Resources */,
-				0984E9B6216EE81500678E63 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +156,7 @@
 			files = (
 				0984E9B3216EE81500678E63 /* ViewController.swift in Sources */,
 				0984E9B1216EE81500678E63 /* AppDelegate.swift in Sources */,
+				099DE83521894DA200A1701F /* Camera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LWPTJLC7P;
 				INFOPLIST_FILE = CameraWithImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LWPTJLC7P;
 				INFOPLIST_FILE = CameraWithImage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
