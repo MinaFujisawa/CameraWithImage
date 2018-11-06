@@ -12,8 +12,8 @@ import AVFoundation
 class ViewController: UIViewController {
     @IBOutlet fileprivate var captureButton: UIButton!
     @IBOutlet fileprivate var capturePreviewView: UIView!
-    @IBOutlet fileprivate var toggleCameraButton: UIButton!
-    @IBOutlet fileprivate var toggleFlashButton: UIButton!
+//    @IBOutlet fileprivate var toggleCameraButton: UIButton!
+//    @IBOutlet fileprivate var toggleFlashButton: UIButton!
     @IBOutlet weak var filterImageView: UIImageView!
     @IBOutlet weak var capturePreviewViewHeightConstraint: NSLayoutConstraint!
     
